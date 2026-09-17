@@ -73,3 +73,32 @@ nav a:hover{
 .btn:hover{
     transform:translateY(-5px);
 }
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    padding:60px 8%;
+}
+.product{
+    background:#1a1a1a;
+    border:1px solid #d4af37;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-8px);
+}
+
+.product h2{
+    margin-bottom:15px;
+}
+
+.product p{
+    font-size:24px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
