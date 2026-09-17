@@ -1,1 +1,1 @@
-# -luxurestore_eu
+# -luxurystore_eu
