@@ -55,12 +55,36 @@ p16:"Занона",
 p17:"Занона",
 p18:"Занона",
 
-buy:"Пурсидани нарх"
+buy:"Пурсидани нарх",privacyTitle:"Сиёсати махфият",
+privacyText:"Махфияти шумо барои мо муҳим аст.",
+
+privacyInfoTitle:"Маълумот",
+privacyInfoText:"Мо танҳо маълумотеро ҷамъ мекунем, ки шумо ҳангоми тамос тавассути Instagram ё Email ихтиёран пешниҳод мекунед.",
+
+privacyUsageTitle:"Истифода",
+privacyUsageText:"Маълумоти шумо танҳо барои ҷавоб додан ба саволҳо ва коркарди фармоишҳои атр истифода мешавад.",
+
+privacySecurityTitle:"Амният",
+privacySecurityText:"Мо маълумоти шахсии шуморо намефурӯшем ва ба шахсони сеюм намедиҳем.",
+
+backHome:"Бозгашт ба саҳифаи асосӣ",
 
 },
 
 ru:{
+privacyTitle:"Политика конфиденциальности",
+privacyText:"Ваша конфиденциальность очень важна для нас.",
 
+privacyInfoTitle:"Информация",
+privacyInfoText:"Мы собираем только ту информацию, которую вы добровольно предоставляете при обращении через Instagram или Email.",
+
+privacyUsageTitle:"Использование",
+privacyUsageText:"Ваши данные используются только для ответа на ваши вопросы и обработки заказов.",
+
+privacySecurityTitle:"Безопасность",
+privacySecurityText:"Мы не продаем и не передаем ваши персональные данные третьим лицам.",
+
+backHome:"Вернуться на главную",
 home:"Главная",
 perfumes:"Парфюм",
 about:"О нас",
@@ -119,7 +143,19 @@ buy:"Узнать цену"
 },
 
 en:{
+privacyTitle:"Privacy Policy",
+privacyText:"Your privacy is important to us.",
 
+privacyInfoTitle:"Information",
+privacyInfoText:"We only collect information that you voluntarily provide when contacting us through Instagram or email.",
+
+privacyUsageTitle:"Usage",
+privacyUsageText:"Your information is used only to answer your questions and process your perfume orders.",
+
+privacySecurityTitle:"Security",
+privacySecurityText:"We never sell or share your personal information with third parties.",
+
+backHome:"Back to Home",
 home:"Home",
 perfumes:"Perfumes",
 about:"About Us",
@@ -178,7 +214,19 @@ buy:"Ask Price"
 },
 
 de:{
+privacyTitle:"Datenschutzerklärung",
+privacyText:"Ihre Privatsphäre ist uns wichtig.",
 
+privacyInfoTitle:"Informationen",
+privacyInfoText:"Wir erfassen nur die Informationen, die Sie uns freiwillig über Instagram oder E-Mail zur Verfügung stellen.",
+
+privacyUsageTitle:"Verwendung",
+privacyUsageText:"Ihre Daten werden ausschließlich zur Beantwortung Ihrer Anfragen und Bearbeitung Ihrer Bestellungen verwendet.",
+
+privacySecurityTitle:"Sicherheit",
+privacySecurityText:"Wir verkaufen oder geben Ihre personenbezogenen Daten niemals an Dritte weiter.",
+
+backHome:"Zur Startseite",
 home:"Startseite",
 perfumes:"Parfüms",
 about:"Über uns",
