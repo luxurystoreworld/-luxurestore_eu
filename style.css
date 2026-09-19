@@ -609,3 +609,26 @@ padding:15px;
 font-size:20px;
 
 }
+.language-box{
+margin-left:20px;
+}
+
+.language-box select{
+background:#111;
+color:#fff;
+border:1px solid #d4af37;
+padding:8px 12px;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+.language-box select:focus{
+outline:none;
+border-color:#f0c94d;
+}
+
+@media(max-width:768px){
+.language-box{
+margin-top:15px;
+}
