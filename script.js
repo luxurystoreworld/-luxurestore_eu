@@ -134,7 +134,21 @@ set("footerText", translations[lang].footerText);
 set("instagramLabel", translations[lang].instagramLabel);
 set("emailLabel", translations[lang].emailLabel);
 set("copyright", translations[lang].copyright);
+// Privacy Page
 
+set("privacyTitle", translations[lang].privacyTitle);
+set("privacyText", translations[lang].privacyText);
+
+set("privacyInfoTitle", translations[lang].privacyInfoTitle);
+set("privacyInfoText", translations[lang].privacyInfoText);
+
+set("privacyUsageTitle", translations[lang].privacyUsageTitle);
+set("privacyUsageText", translations[lang].privacyUsageText);
+
+set("privacySecurityTitle", translations[lang].privacySecurityTitle);
+set("privacySecurityText", translations[lang].privacySecurityText);
+
+set("backHome", translations[lang].backHome);
 // Buy buttons
 
 document.querySelectorAll("[id^='buy']").forEach(btn => {
