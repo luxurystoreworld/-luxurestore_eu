@@ -59,11 +59,14 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:0 20px;
+position:relative;
+overflow:hidden;
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
-url("https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1800");
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+url("images/hero.jpg");
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 }
 
 .hero-content{
