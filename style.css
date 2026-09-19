@@ -1,5 +1,6 @@
 /* ===================================
    LUXURY STORE
+   PREMIUM STYLE
 =================================== */
 
 *{
@@ -28,22 +29,21 @@ header{
 position:sticky;
 top:0;
 z-index:1000;
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 padding:18px 8%;
-
-background:#111;
-border-bottom:1px solid #222;
+background:rgba(10,10,10,.95);
+backdrop-filter:blur(15px);
+border-bottom:1px solid rgba(212,175,55,.2);
 }
 
 .logo{
 font-size:32px;
-font-weight:bold;
+font-weight:700;
 letter-spacing:3px;
 color:#d4af37;
+user-select:none;
 }
 
 /* ===================================
@@ -60,6 +60,8 @@ nav a{
 color:#fff;
 text-decoration:none;
 font-size:16px;
+font-weight:500;
+position:relative;
 transition:.3s;
 }
 
@@ -67,12 +69,27 @@ nav a:hover{
 color:#d4af37;
 }
 
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#d4af37;
+transition:.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
 /* ===================================
 LANGUAGE
 =================================== */
 
 .language-box{
-margin-left:20px;
+margin-left:25px;
 }
 
 .language-box select{
@@ -80,9 +97,15 @@ background:#181818;
 color:#fff;
 border:1px solid #d4af37;
 padding:10px 14px;
-border-radius:8px;
-outline:none;
+border-radius:10px;
 cursor:pointer;
+font-size:15px;
+outline:none;
+transition:.3s;
+}
+
+.language-box select:hover{
+border-color:#f2c94c;
 }
 
 /* ===================================
@@ -92,45 +115,43 @@ MOBILE MENU
 .menu-toggle{
 display:none;
 font-size:30px;
-color:#d4af37;
 cursor:pointer;
+color:#d4af37;
+user-select:none;
 }
+
 /* ===================================
 HERO
 =================================== */
 
 .hero{
+position:relative;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-
 padding:120px 8%;
 min-height:85vh;
-
-background:linear-gradient(180deg,#111,#0b0b0b);
+overflow:hidden;
 }
 
 .hero-content{
+position:relative;
+z-index:2;
 max-width:900px;
 }
 
 .hero h1{
 font-size:64px;
-margin-bottom:20px;
 letter-spacing:3px;
-color:#fff;
+margin-bottom:20px;
 }
 
 .hero p{
 font-size:22px;
 color:#d0d0d0;
-margin-bottom:40px;
+margin-bottom:45px;
 }
-
-/* ===================================
-BUTTONS
-=================================== */
 
 .hero-buttons{
 display:flex;
@@ -139,14 +160,21 @@ gap:20px;
 flex-wrap:wrap;
 }
 
+/* ===================================
+BUTTONS
+=================================== */
+
 .btn,
 .btn2{
-display:inline-block;
-padding:15px 35px;
-border-radius:10px;
-text-decoration:none;
+display:inline-flex;
+justify-content:center;
+align-items:center;
+padding:15px 34px;
+border-radius:12px;
+font-size:17px;
 font-weight:bold;
-transition:.3s;
+text-decoration:none;
+transition:.35s;
 }
 
 .btn{
@@ -156,10 +184,11 @@ color:#000;
 
 .btn:hover{
 background:#f2c94c;
-transform:translateY(-3px);
+transform:translateY(-4px);
 }
 
 .btn2{
+background:transparent;
 border:2px solid #d4af37;
 color:#fff;
 }
@@ -167,9 +196,32 @@ color:#fff;
 .btn2:hover{
 background:#d4af37;
 color:#000;
-transform:translateY(-3px);
+transform:translateY(-4px);
 }
 
+.hero::before{
+content:"";
+position:absolute;
+width:520px;
+height:520px;
+background:#d4af37;
+filter:blur(220px);
+opacity:.08;
+top:-160px;
+right:-160px;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+width:460px;
+height:460px;
+background:#ffffff;
+filter:blur(250px);
+opacity:.03;
+bottom:-170px;
+left:-170px;
+}
 /* ===================================
 BRANDS
 =================================== */
@@ -181,28 +233,30 @@ text-align:center;
 
 .brands h2{
 font-size:38px;
-color:#d4af37;
 margin-bottom:45px;
+color:#d4af37;
 }
 
 .brand-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:20px;
+gap:25px;
 }
 
 .brand-grid div{
-background:#181818;
-border:1px solid #2b2b2b;
-padding:25px;
-border-radius:12px;
+background:#171717;
+border:1px solid rgba(212,175,55,.15);
+padding:28px;
+border-radius:16px;
+font-size:20px;
 font-weight:bold;
-transition:.3s;
+transition:.35s;
 }
 
 .brand-grid div:hover{
+transform:translateY(-8px);
 border-color:#d4af37;
-transform:translateY(-5px);
+box-shadow:0 12px 30px rgba(212,175,55,.18);
 }
 
 /* ===================================
@@ -216,7 +270,7 @@ padding:90px 8%;
 .about h2{
 text-align:center;
 font-size:38px;
-margin-bottom:45px;
+margin-bottom:50px;
 color:#d4af37;
 }
 
@@ -227,38 +281,41 @@ gap:30px;
 }
 
 .box{
-background:#181818;
-border:1px solid #2b2b2b;
-border-radius:18px;
+background:#171717;
+border:1px solid rgba(212,175,55,.15);
 padding:35px;
-transition:.3s;
+border-radius:18px;
+transition:.35s;
 }
 
 .box:hover{
+transform:translateY(-8px);
 border-color:#d4af37;
-transform:translateY(-5px);
+box-shadow:0 12px 30px rgba(212,175,55,.18);
 }
 
 .box h3{
-margin-bottom:15px;
 font-size:24px;
+margin-bottom:18px;
 }
 
 .box p{
-color:#d0d0d0;
+font-size:17px;
 line-height:1.8;
+color:#d0d0d0;
 }
+
 /* ===================================
 PRODUCTS
 =================================== */
 
 .hero-small{
-text-align:center;
 padding:80px 8% 40px;
+text-align:center;
 }
 
 .hero-small h1{
-font-size:50px;
+font-size:52px;
 margin-bottom:15px;
 }
 
@@ -271,50 +328,53 @@ color:#d0d0d0;
 max-width:1500px;
 margin:60px auto;
 padding:0 8%;
-
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:35px;
 }
 
 .product{
-background:#181818;
-border:1px solid #2b2b2b;
-border-radius:18px;
+background:#171717;
+border:1px solid rgba(212,175,55,.18);
+border-radius:20px;
 overflow:hidden;
-transition:.3s;
-
 display:flex;
 flex-direction:column;
+transition:.35s;
 }
 
 .product:hover{
-transform:translateY(-6px);
+transform:translateY(-8px);
 border-color:#d4af37;
+box-shadow:0 15px 35px rgba(212,175,55,.22);
 }
 
 .product img{
 width:100%;
-height:420px;
+aspect-ratio:3/4;
 object-fit:cover;
 display:block;
+transition:.4s;
+}
+
+.product:hover img{
+transform:scale(1.04);
 }
 
 .product h2{
-font-size:26px;
 padding:20px 20px 10px;
+font-size:26px;
 }
 
 .product p{
 padding:0 20px;
-color:#cfcfcf;
+color:#d0d0d0;
 flex:1;
 }
 
 .product .btn{
 margin:20px;
 }
-
 /* ===================================
 FOOTER
 =================================== */
@@ -324,13 +384,14 @@ margin-top:80px;
 padding:50px 8%;
 background:#111;
 text-align:center;
-border-top:1px solid #222;
+border-top:1px solid rgba(212,175,55,.2);
 }
 
 footer h2{
 font-size:30px;
 color:#d4af37;
 margin-bottom:15px;
+letter-spacing:2px;
 }
 
 footer p{
@@ -341,10 +402,11 @@ color:#d0d0d0;
 footer a{
 color:#d4af37;
 text-decoration:none;
+transition:.3s;
 }
 
 footer a:hover{
-text-decoration:underline;
+color:#f2c94c;
 }
 
 /* ===================================
@@ -353,33 +415,30 @@ BACK TO TOP
 
 #topBtn{
 position:fixed;
-bottom:25px;
 right:25px;
-
+bottom:25px;
 display:none;
 justify-content:center;
 align-items:center;
-
-width:50px;
-height:50px;
-
+width:52px;
+height:52px;
 border:none;
 border-radius:50%;
-
 background:#d4af37;
 color:#000;
-
 font-size:22px;
 font-weight:bold;
-
 cursor:pointer;
+box-shadow:0 8px 20px rgba(0,0,0,.35);
 transition:.3s;
+z-index:999;
 }
 
 #topBtn:hover{
 background:#f2c94c;
-transform:translateY(-3px);
+transform:translateY(-4px);
 }
+
 /* ===================================
 ANIMATION
 =================================== */
@@ -387,21 +446,29 @@ ANIMATION
 .box,
 .product,
 .brand-grid div{
-opacity:1;
-transform:none;
-transition:.5s;
+opacity:0;
+transform:translateY(40px);
+transition:.6s;
 }
 
 .show{
-opacity:1;
-transform:none;
+opacity:1 !important;
+transform:translateY(0) !important;
 }
 
 /* ===================================
 TABLET
 =================================== */
 
-@media(max-width:992px){
+@media (max-width:992px){
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:20px;
+}
 
 .brand-grid{
 grid-template-columns:repeat(2,1fr);
@@ -415,21 +482,13 @@ grid-template-columns:1fr;
 grid-template-columns:repeat(2,1fr);
 }
 
-.hero h1{
-font-size:48px;
-}
-
-.hero p{
-font-size:20px;
-}
-
 }
 
 /* ===================================
 MOBILE
 =================================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 header{
 padding:18px 5%;
@@ -443,9 +502,9 @@ display:block;
 nav{
 display:none;
 width:100%;
+margin-top:20px;
 flex-direction:column;
 gap:18px;
-margin-top:20px;
 }
 
 nav.active{
@@ -484,10 +543,6 @@ width:100%;
 }
 
 .brand-grid{
-grid-template-columns:1fr;
-}
-
-.about-grid{
 grid-template-columns:1fr;
 }
 
