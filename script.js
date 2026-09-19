@@ -25,15 +25,7 @@ window.addEventListener("scroll", () => {
 
 if (topBtn) {
 
-if (window.scrollY > 300) {
-
-topBtn.style.display = "flex";
-
-} else {
-
-topBtn.style.display = "none";
-
-}
+topBtn.style.display = window.scrollY > 300 ? "flex" : "none";
 
 }
 
@@ -43,9 +35,9 @@ function topFunction() {
 
 window.scrollTo({
 
-top: 0,
+top:0,
 
-behavior: "smooth"
+behavior:"smooth"
 
 });
 
@@ -53,11 +45,11 @@ behavior: "smooth"
 
 // ---------- SCROLL ANIMATION ----------
 
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries)=>{
 
-entries.forEach(entry => {
+entries.forEach(entry=>{
 
-if (entry.isIntersecting) {
+if(entry.isIntersecting){
 
 entry.target.classList.add("show");
 
@@ -65,110 +57,110 @@ entry.target.classList.add("show");
 
 });
 
-}, {
+},{threshold:0.2});
 
-threshold: 0.2
-
-});
-
-document.querySelectorAll(".box,.product,.brand-grid div").forEach(el => {
+document.querySelectorAll(".box,.product,.brand-grid div").forEach(el=>{
 
 observer.observe(el);
 
 });
+
 // ===============================
 // LANGUAGE SYSTEM
 // ===============================
 
 const language = document.getElementById("language");
 
-function set(id, text) {
+function set(id,text){
 
-const el = document.getElementById(id);
+const el=document.getElementById(id);
 
-if (el) {
+if(el){
 
-el.textContent = text;
-
-}
+el.textContent=text;
 
 }
 
-function changeLanguage(lang) {
+}
 
-if (!translations[lang]) return;
+function changeLanguage(lang){
+
+if(!translations[lang]) return;
 
 // Navigation
 
-set("home", translations[lang].home);
-set("perfumes", translations[lang].perfumes);
-set("aboutLink", translations[lang].about);
-set("contactLink", translations[lang].contact);
+set("home",translations[lang].home);
+set("perfumes",translations[lang].perfumes);
+set("aboutLink",translations[lang].about);
+set("contactLink",translations[lang].contact);
 
-// Home page
+// Home
 
-set("heroTitle", translations[lang].heroTitle);
-set("heroText", translations[lang].heroText);
+set("heroTitle",translations[lang].heroTitle);
+set("heroText",translations[lang].heroText);
 
-set("shop", translations[lang].shop);
-set("price", translations[lang].price);
+set("shop",translations[lang].shop);
+set("price",translations[lang].price);
 
-set("brands", translations[lang].brands);
+set("brands",translations[lang].brands);
 
-set("why", translations[lang].why);
+set("why",translations[lang].why);
 
-set("quality", "🌟 " + translations[lang].quality);
-set("qualityText", translations[lang].qualityText);
+set("quality","🌟 "+translations[lang].quality);
+set("qualityText",translations[lang].qualityText);
 
-set("delivery", "🚚 " + translations[lang].delivery);
-set("deliveryText", translations[lang].deliveryText);
+set("delivery","🚚 "+translations[lang].delivery);
+set("deliveryText",translations[lang].deliveryText);
 
-set("support", "💬 " + translations[lang].support);
-set("supportText", translations[lang].supportText);
+set("support","💬 "+translations[lang].support);
+set("supportText",translations[lang].supportText);
 
-// Products page
+// Products
 
-set("productsTitle", translations[lang].productsTitle);
-set("productsText", translations[lang].productsText);
+set("productsTitle",translations[lang].productsTitle);
+set("productsText",translations[lang].productsText);
+// Product Types
 
-set("p1", translations[lang].p1);
-set("p2", translations[lang].p2);
-set("p3", translations[lang].p3);
-set("p4", translations[lang].p4);
-set("p5", translations[lang].p5);
-set("p6", translations[lang].p6);
+for(let i=1;i<=18;i++){
 
-// Footer
+set("p"+i,translations[lang]["p"+i]);
 
-set("footerText", translations[lang].footerText);
-set("instagramLabel", translations[lang].instagramLabel);
-set("emailLabel", translations[lang].emailLabel);
-set("copyright", translations[lang].copyright);
+}
 
-// All "Buy" buttons
+// Buy Buttons
 
-document.querySelectorAll("[id^='buy']").forEach(button => {
+document.querySelectorAll("[id^='buy']").forEach(button=>{
 
-button.textContent = translations[lang].buy;
+button.textContent=translations[lang].buy;
 
 });
 
-localStorage.setItem("language", lang);
+// Footer
+
+set("footerText",translations[lang].footerText);
+set("instagramLabel",translations[lang].instagramLabel);
+set("emailLabel",translations[lang].emailLabel);
+set("copyright",translations[lang].copyright);
+
+// Save language
+
+localStorage.setItem("language",lang);
 
 }
+
 // ===============================
 // START LANGUAGE
 // ===============================
 
-if (language) {
+if(language){
 
-const savedLanguage = localStorage.getItem("language") || "tj";
+const savedLanguage=localStorage.getItem("language") || "tj";
 
-language.value = savedLanguage;
+language.value=savedLanguage;
 
 changeLanguage(savedLanguage);
 
-language.addEventListener("change", function () {
+language.addEventListener("change",function(){
 
 changeLanguage(this.value);
 
