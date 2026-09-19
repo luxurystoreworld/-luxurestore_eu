@@ -110,6 +110,19 @@ set("why",translations[lang].why);
 set("quality","🌟 "+translations[lang].quality);
 set("delivery","🚚 "+translations[lang].delivery);
 set("support","💬 "+translations[lang].support);
+set("qualityText",translations[lang].qualityText);
+
+set("deliveryText",translations[lang].deliveryText);
+
+set("supportText",translations[lang].supportText);
+
+set("footerText",translations[lang].footerText);
+
+set("instagramLabel",translations[lang].instagramLabel);
+
+set("emailLabel",translations[lang].emailLabel);
+
+set("copyright",translations[lang].copyright);
 
 localStorage.setItem("language",lang);
 
