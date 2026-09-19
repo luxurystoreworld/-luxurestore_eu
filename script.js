@@ -1,15 +1,15 @@
 // ===============================
-// LUXURY STORE SCRIPT
+// LUXURY STORE
 // ===============================
 
 // ---------- Mobile Menu ----------
 
-const menu = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav");
+const menu=document.getElementById("menu-toggle");
+const nav=document.getElementById("nav");
 
-if(menu && nav){
+if(menu){
 
-menu.addEventListener("click",function(){
+menu.addEventListener("click",()=>{
 
 nav.classList.toggle("active");
 
@@ -21,9 +21,7 @@ nav.classList.toggle("active");
 
 const topBtn=document.getElementById("topBtn");
 
-window.addEventListener("scroll",function(){
-
-if(topBtn){
+window.addEventListener("scroll",()=>{
 
 if(window.scrollY>300){
 
@@ -32,8 +30,6 @@ topBtn.style.display="flex";
 }else{
 
 topBtn.style.display="none";
-
-}
 
 }
 
@@ -72,16 +68,13 @@ document.querySelectorAll(".box,.product,.brand-grid div").forEach(el=>{
 observer.observe(el);
 
 });
-
-// ---------- Language ----------
+// ===============================
+// LANGUAGE SYSTEM
+// ===============================
 
 const language=document.getElementById("language");
 
-function changeLanguage(lang){
-
-if(!translations[lang]) return;
-
-const set=(id,text)=>{
+function set(id,text){
 
 const el=document.getElementById(id);
 
@@ -91,7 +84,11 @@ el.textContent=text;
 
 }
 
-};
+}
+
+function changeLanguage(lang){
+
+if(!translations[lang]) return;
 
 set("home",translations[lang].home);
 set("perfumes",translations[lang].perfumes);
@@ -105,15 +102,16 @@ set("shop",translations[lang].shop);
 set("price",translations[lang].price);
 
 set("brands",translations[lang].brands);
+
 set("why",translations[lang].why);
 
 set("quality","🌟 "+translations[lang].quality);
-set("delivery","🚚 "+translations[lang].delivery);
-set("support","💬 "+translations[lang].support);
 set("qualityText",translations[lang].qualityText);
 
+set("delivery","🚚 "+translations[lang].delivery);
 set("deliveryText",translations[lang].deliveryText);
 
+set("support","💬 "+translations[lang].support);
 set("supportText",translations[lang].supportText);
 
 set("footerText",translations[lang].footerText);
@@ -130,11 +128,11 @@ localStorage.setItem("language",lang);
 
 if(language){
 
-const saved=localStorage.getItem("language")||"tj";
+const savedLanguage=localStorage.getItem("language")||"tj";
 
-language.value=saved;
+language.value=savedLanguage;
 
-changeLanguage(saved);
+changeLanguage(savedLanguage);
 
 language.addEventListener("change",function(){
 
