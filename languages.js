@@ -1,4 +1,4 @@
-const translations={
+const translations = {
 
 tj:{
 
@@ -8,7 +8,7 @@ about:"Дар бораи мо",
 contact:"Тамос",
 
 heroTitle:"LUXURY STORE",
-heroText:"Атрҳои аслӣ аз брендҳои машҳури ҷаҳон.",
+heroText:"Атрҳои аслии брендҳои машҳури ҷаҳон.",
 
 shop:"Дидани атрҳо",
 price:"Пурсидани нарх",
@@ -18,13 +18,16 @@ brands:"Брендҳои машҳур",
 why:"Чаро LUXURY STORE?",
 
 quality:"Сифати баланд",
-qualityText:"Мо танҳо атрҳои аслӣ аз брендҳои машҳури ҷаҳон пешниҳод мекунем.",
+
+qualityText:"Мо танҳо атрҳои аслии брендҳои машҳури ҷаҳон пешниҳод мекунем.",
 
 delivery:"Расонидани зуд",
-deliveryText:"Фармоишҳоро ба тамоми Тоҷикистон бо суръат ва бехатарӣ мерасонем.",
 
-support:"Дастгирӣ",
-supportText:"Дастаи мо ҳар рӯз омода аст ба ҳамаи саволҳои шумо ҷавоб диҳад.",
+deliveryText:"Фармоишҳои шуморо ба тамоми Тоҷикистон зуд ва бехатар мерасонем.",
+
+support:"Дастгирии 24/7",
+
+supportText:"Мо ҳамеша омодаем ба шумо барои интихоби атр кӯмак кунем.",
 
 footerText:"Атрҳои аслии Premium",
 
@@ -32,7 +35,20 @@ instagramLabel:"Instagram:",
 
 emailLabel:"Email:",
 
-copyright:"© 2025 LUXURY STORE. Ҳамаи ҳуқуқҳо ҳифз шудаанд."
+copyright:"© 2025 LUXURY STORE. Ҳамаи ҳуқуқҳо ҳифз шудаанд.",
+
+productsTitle:"Атрҳои мо",
+
+productsText:"Танҳо атрҳои аслии брендҳои машҳур.",
+
+p1:"Мардона",
+p2:"Мардона",
+p3:"Мардона",
+p4:"Занона",
+p5:"Занона",
+p6:"Занона",
+
+buy:"Пурсидани нарх"
 
 },
 
@@ -44,9 +60,11 @@ about:"О нас",
 contact:"Контакты",
 
 heroTitle:"LUXURY STORE",
+
 heroText:"Оригинальная парфюмерия мировых брендов.",
 
 shop:"Смотреть парфюм",
+
 price:"Узнать цену",
 
 brands:"Популярные бренды",
@@ -54,13 +72,16 @@ brands:"Популярные бренды",
 why:"Почему LUXURY STORE?",
 
 quality:"Высокое качество",
+
 qualityText:"Мы предлагаем только оригинальную парфюмерию мировых брендов.",
 
 delivery:"Быстрая доставка",
+
 deliveryText:"Быстрая и безопасная доставка по всему Таджикистану.",
 
-support:"Поддержка",
-supportText:"Наша команда всегда готова помочь вам.",
+support:"Поддержка 24/7",
+
+supportText:"Мы всегда готовы помочь вам с выбором парфюма.",
 
 footerText:"Оригинальная премиальная парфюмерия",
 
@@ -68,7 +89,20 @@ instagramLabel:"Instagram:",
 
 emailLabel:"Email:",
 
-copyright:"© 2025 LUXURY STORE. Все права защищены."
+copyright:"© 2025 LUXURY STORE. Все права защищены.",
+
+productsTitle:"Наши духи",
+
+productsText:"Только оригинальная парфюмерия мировых брендов.",
+
+p1:"Мужской",
+p2:"Мужской",
+p3:"Мужской",
+p4:"Женский",
+p5:"Женский",
+p6:"Женский",
+
+buy:"Узнать цену"
 
 },
 en:{
@@ -79,9 +113,11 @@ about:"About Us",
 contact:"Contact",
 
 heroTitle:"LUXURY STORE",
+
 heroText:"Original luxury perfumes from the world's leading brands.",
 
 shop:"View Perfumes",
+
 price:"Ask Price",
 
 brands:"Popular Brands",
@@ -89,13 +125,16 @@ brands:"Popular Brands",
 why:"Why LUXURY STORE?",
 
 quality:"Premium Quality",
+
 qualityText:"We offer only original perfumes from the world's leading brands.",
 
 delivery:"Fast Delivery",
+
 deliveryText:"Fast and secure delivery throughout Tajikistan.",
 
-support:"Customer Support",
-supportText:"Our team is always ready to help you.",
+support:"24/7 Support",
+
+supportText:"Our team is always ready to help you choose the perfect fragrance.",
 
 footerText:"Original Premium Perfumes",
 
@@ -103,7 +142,20 @@ instagramLabel:"Instagram:",
 
 emailLabel:"Email:",
 
-copyright:"© 2025 LUXURY STORE. All Rights Reserved."
+copyright:"© 2025 LUXURY STORE. All Rights Reserved.",
+
+productsTitle:"Our Perfumes",
+
+productsText:"Only original perfumes from the world's leading brands.",
+
+p1:"Men",
+p2:"Men",
+p3:"Men",
+p4:"Women",
+p5:"Women",
+p6:"Women",
+
+buy:"Ask Price"
 
 },
 
@@ -115,9 +167,11 @@ about:"Über uns",
 contact:"Kontakt",
 
 heroTitle:"LUXURY STORE",
-heroText:"Originale Luxusparfums der weltweit bekanntesten Marken.",
+
+heroText:"Originale Luxusparfums der bekanntesten Marken der Welt.",
 
 shop:"Parfüms ansehen",
+
 price:"Preis anfragen",
 
 brands:"Beliebte Marken",
@@ -125,13 +179,16 @@ brands:"Beliebte Marken",
 why:"Warum LUXURY STORE?",
 
 quality:"Premium Qualität",
+
 qualityText:"Wir bieten nur Originalparfums der bekanntesten Marken der Welt an.",
 
 delivery:"Schnelle Lieferung",
+
 deliveryText:"Schnelle und sichere Lieferung in ganz Tadschikistan.",
 
-support:"Kundendienst",
-supportText:"Unser Team hilft Ihnen jederzeit gerne weiter.",
+support:"24/7 Support",
+
+supportText:"Unser Team hilft Ihnen jederzeit bei der Auswahl des passenden Parfüms.",
 
 footerText:"Original Premium Parfüms",
 
@@ -139,8 +196,20 @@ instagramLabel:"Instagram:",
 
 emailLabel:"E-Mail:",
 
-copyright:"© 2025 LUXURY STORE. Alle Rechte vorbehalten."
+copyright:"© 2025 LUXURY STORE. Alle Rechte vorbehalten.",
+
+productsTitle:"Unsere Parfüms",
+
+productsText:"Nur Originalparfüms der bekanntesten Marken der Welt.",
+
+p1:"Herren",
+p2:"Herren",
+p3:"Herren",
+p4:"Damen",
+p5:"Damen",
+p6:"Damen",
+
+buy:"Preis anfragen"
 
 }
-
 };
