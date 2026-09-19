@@ -60,7 +60,6 @@ buy:"Пурсидани нарх"
 },
 
 ru:{
-ru:{
 
 home:"Главная",
 perfumes:"Парфюм",
@@ -120,7 +119,6 @@ buy:"Узнать цену"
 },
 
 en:{
-en:{
 
 home:"Home",
 perfumes:"Perfumes",
@@ -179,7 +177,6 @@ buy:"Ask Price"
 
 },
 
-de:{
 de:{
 
 home:"Startseite",
