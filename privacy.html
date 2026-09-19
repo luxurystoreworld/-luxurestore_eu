@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tg">
 
 <head>
 
@@ -17,43 +17,63 @@
 <header>
 
 <div class="logo">
+
 LUXURY STORE
+
 </div>
 
 <div class="menu-toggle" id="menu-toggle">
+
 ☰
+
 </div>
 
 <nav id="nav">
 
-<a href="index.html">
-Home
+<a href="index.html" id="home">
+Асосӣ
 </a>
 
-<a href="products.html">
-Perfumes
+<a href="products.html" id="perfumes">
+Атрҳо
 </a>
 
-<a href="index.html#about">
-About
+<a href="index.html#about" id="aboutLink">
+Дар бораи мо
 </a>
 
-<a href="index.html#contact">
-Contact
+<a href="index.html#contact" id="contactLink">
+Тамос
 </a>
 
 </nav>
 
-</header>
+<div class="language-box">
 
+<select id="language">
+
+<option value="tj">🇹🇯 TJ</option>
+<option value="ru">🇷🇺 RU</option>
+<option value="en">🇬🇧 EN</option>
+<option value="de">🇩🇪 DE</option>
+
+</select>
+
+</div>
+
+</header>
 <section class="hero-small">
 
 <h1 id="privacyTitle">
-Privacy Policy
+
+Сиёсати махфият
+
 </h1>
 
 <p id="privacyText">
-Your privacy is important to us.
+
+Махфияти шумо барои мо муҳим аст.
+
 </p>
 
 </section>
@@ -63,23 +83,30 @@ Your privacy is important to us.
 <div class="box">
 
 <h3 id="privacyInfoTitle">
-Information
+
+Маълумот
+
 </h3>
 
 <p id="privacyInfoText">
-We only collect information that you voluntarily provide when contacting us through Instagram or email.
+
+Мо танҳо маълумотеро ҷамъ мекунем, ки шумо ҳангоми тамос тавассути Instagram ё Email ихтиёран пешниҳод мекунед.
+
 </p>
 
 </div>
-
 <div class="box">
 
 <h3 id="privacyUsageTitle">
-Usage
+
+Истифода
+
 </h3>
 
 <p id="privacyUsageText">
-Your information is used only to answer your questions and process your perfume orders.
+
+Маълумоти шумо танҳо барои ҷавоб додан ба саволҳо ва коркарди фармоишҳои атр истифода мешавад.
+
 </p>
 
 </div>
@@ -87,37 +114,44 @@ Your information is used only to answer your questions and process your perfume 
 <div class="box">
 
 <h3 id="privacySecurityTitle">
-Security
+
+Амният
+
 </h3>
 
 <p id="privacySecurityText">
-We never sell or share your personal information with third parties.
+
+Мо маълумоти шахсии шуморо намефурӯшем ва ба шахсони сеюм намедиҳем.
+
 </p>
 
 </div>
 
 </section>
-
 <footer>
 
 <h2>LUXURY STORE</h2>
 
-<p>
-Original Premium Perfumes
+<p id="footerText">
+Атрҳои аслии Premium
 </p>
 
 <p>
 
 <a href="index.html" id="backHome">
-Back to Home
+← Бозгашт ба саҳифаи асосӣ
 </a>
 
 </p>
 
 </footer>
 
+<button id="topBtn" onclick="topFunction()">
+↑
+</button>
+
+<script src="languages.js"></script>
 <script src="script.js"></script>
 
 </body>
-
 </html>
