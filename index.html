@@ -17,24 +17,25 @@
 <header>
 
 <div class="logo">
-<div class="menu-toggle" id="menu-toggle">
-☰
 LUXURY STORE
 </div>
 
-<nav>
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
 
 <nav id="nav">
 
-<a href="index.html">Асосӣ</a>
+<a href="index.html" id="home">Асосӣ</a>
 
-<a href="products.html">Атрҳо</a>
+<a href="products.html" id="perfumes">Атрҳо</a>
 
-<a href="#about">Дар бораи мо</a>
+<a href="#about" id="aboutLink">Дар бораи мо</a>
 
-<a href="#contact">Тамос</a>
+<a href="#contact" id="contactLink">Тамос</a>
 
 </nav>
+
 <div class="language-box">
 
 <select id="language">
@@ -57,33 +58,39 @@ LUXURY STORE
 
 <div class="hero-content">
 
-<h1>
-LUXURE STORE
+<h1 id="heroTitle">
+LUXURY STORE
 </h1>
 
-<p>
-
+<p id="heroText">
 Атрҳои аслӣ аз брендҳои машҳури ҷаҳон.
-
 </p>
 
 <div class="hero-buttons">
 
-<a href="products.html" class="btn">
+<a href="products.html" class="btn" id="shop">
 Дидани атрҳо
 </a>
 
-<a href="https://instagram.com/luxurystore_eu" target="_blank" class="btn2">
+<a href="https://instagram.com/luxurystore_eu"
+target="_blank"
+class="btn2"
+id="price">
+
 Пурсидани нарх
+
 </a>
 
 </div>
 
+</div>
+
 </section>
+<!-- BRANDS -->
 
 <section class="brands">
 
-<h2>Брендҳои машҳур</h2>
+<h2 id="brands">Брендҳои машҳур</h2>
 
 <div class="brand-grid">
 
@@ -97,7 +104,7 @@ LUXURE STORE
 
 <div>VALENTINO</div>
 
-<div>ARMANI</div>
+<div>GIORGIO ARMANI</div>
 
 <div>LANCÔME</div>
 
@@ -107,58 +114,82 @@ LUXURE STORE
 
 </section>
 
-<section id="about" class="about">
+<!-- ABOUT -->
 
-<h2>Чаро LUXURY STORE?</h2>
+<section class="about" id="about">
+
+<h2 id="why">Чаро LUXURY STORE?</h2>
 
 <div class="about-grid">
 
 <div class="box">
 
-<h3>🌟 Сифати баланд</h3>
+<h3 id="quality">🌟 Сифати баланд</h3>
 
 <p>
-Танҳо маҳсулоти аслӣ.
+Мо танҳо атрҳои аслӣ ва босифатро аз брендҳои машҳур пешниҳод мекунем.
 </p>
 
 </div>
 
 <div class="box">
 
-<h3>🚚 Расонидани зуд</h3>
+<h3 id="delivery">🚚 Расонидани зуд</h3>
 
 <p>
-Ба тамоми Тоҷикистон.
+Фармоишҳои шумо ба тамоми Тоҷикистон бо суръат ва бехатарӣ расонида мешаванд.
 </p>
 
 </div>
 
 <div class="box">
 
-<h3>💬 Дастгирӣ</h3>
+<h3 id="support">💬 Дастгирӣ</h3>
 
 <p>
-Мо ҳамеша барои кӯмак омодаем.
+Мо ҳамеша омодаем ба саволҳои шумо ҷавоб диҳем ва дар интихоби атр кӯмак кунем.
 </p>
+
+</div>
 
 </div>
 
 </section>
+<!-- FOOTER -->
 
 <footer id="contact">
 
 <h2>LUXURY STORE</h2>
 
-<p>Instagram: @luxurystore_eu</p>
+<p>Original Premium Perfumes</p>
 
-<p>© 2025 LUXURE STORE</p>
+<p>
+Instagram:
+<a href="https://instagram.com/luxurystore_eu" target="_blank">
+@luxurystore_eu
+</a>
+</p>
+
+<p>Email: info@luxurestore.com</p>
+
+<p>© 2025 LUXURY STORE. All Rights Reserved.</p>
 
 </footer>
-<button id="topBtn" onclick="topFunction()">↑</button>
+
+<!-- TOP BUTTON -->
+
+<button id="topBtn" onclick="topFunction()">
+
+↑
+
+</button>
+
+<!-- JAVASCRIPT -->
+
+<script src="languages.js"></script>
 
 <script src="script.js"></script>
-<script src="languages.js"></script>
-<script src="script.js"></script>
+
 </body>
 
 </html>
