@@ -1,3 +1,8 @@
+/* =========================
+   LUXURY STORE
+   PART 1
+========================= */
+
 *{
 margin:0;
 padding:0;
@@ -13,25 +18,38 @@ line-height:1.6;
 overflow-x:hidden;
 }
 
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+}
+
+/* =========================
+HEADER
+========================= */
+
 header{
 position:fixed;
 top:0;
 left:0;
 width:100%;
+padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
-background:rgba(15,15,15,.85);
-backdrop-filter:blur(15px);
+background:rgba(10,10,10,.88);
+backdrop-filter:blur(12px);
 border-bottom:1px solid rgba(212,175,55,.2);
 z-index:1000;
 }
 
 .logo{
 font-size:34px;
-font-weight:700;
-letter-spacing:5px;
+font-weight:bold;
+letter-spacing:4px;
 color:#d4af37;
 }
 
@@ -41,16 +59,18 @@ gap:35px;
 }
 
 nav a{
-text-decoration:none;
 color:#fff;
-font-size:17px;
-font-weight:500;
+font-size:18px;
 transition:.3s;
 }
 
 nav a:hover{
 color:#d4af37;
 }
+
+/* =========================
+HERO
+========================= */
 
 .hero{
 height:100vh;
@@ -62,22 +82,48 @@ padding:0 20px;
 position:relative;
 overflow:hidden;
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.75)),
 url("images/hero.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 }
 
+.hero::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:#d4af37;
+filter:blur(220px);
+opacity:.08;
+top:-150px;
+right:-150px;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+width:450px;
+height:450px;
+background:#ffffff;
+filter:blur(250px);
+opacity:.03;
+bottom:-150px;
+left:-150px;
+}
+
 .hero-content{
+position:relative;
+z-index:2;
 max-width:850px;
+animation:fadeUp 1.2s ease;
 }
 
 .hero h1{
 font-size:72px;
-letter-spacing:6px;
+letter-spacing:5px;
 margin-bottom:20px;
-color:#fff;
 }
 
 .hero p{
@@ -85,6 +131,10 @@ font-size:24px;
 color:#ddd;
 margin-bottom:45px;
 }
+
+/* =========================
+BUTTONS
+========================= */
 
 .hero-buttons{
 display:flex;
@@ -96,11 +146,10 @@ flex-wrap:wrap;
 .btn,
 .btn2{
 display:inline-block;
-padding:16px 38px;
+padding:16px 36px;
 border-radius:10px;
 font-size:18px;
 font-weight:bold;
-text-decoration:none;
 transition:.35s;
 }
 
@@ -111,7 +160,7 @@ color:#000;
 
 .btn:hover{
 transform:translateY(-5px);
-box-shadow:0 10px 30px rgba(212,175,55,.4);
+box-shadow:0 12px 30px rgba(212,175,55,.4);
 }
 
 .btn2{
@@ -124,7 +173,23 @@ background:#d4af37;
 color:#000;
 transform:translateY(-5px);
 }
-/* ===== BRANDS ===== */
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(70px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+/* =========================
+   BRANDS
+========================= */
 
 .brands{
 max-width:1400px;
@@ -135,8 +200,8 @@ text-align:center;
 
 .brands h2{
 font-size:48px;
-margin-bottom:60px;
 color:#d4af37;
+margin-bottom:60px;
 letter-spacing:2px;
 }
 
@@ -150,7 +215,7 @@ gap:25px;
 background:#181818;
 border:1px solid rgba(212,175,55,.25);
 border-radius:18px;
-padding:35px;
+padding:35px 20px;
 font-size:24px;
 font-weight:bold;
 transition:.35s;
@@ -160,10 +225,12 @@ cursor:pointer;
 .brand-grid div:hover{
 transform:translateY(-8px);
 border-color:#d4af37;
-box-shadow:0 15px 40px rgba(212,175,55,.25);
+box-shadow:0 15px 35px rgba(212,175,55,.25);
 }
 
-/* ===== ABOUT ===== */
+/* =========================
+   ABOUT
+========================= */
 
 .about{
 max-width:1400px;
@@ -174,8 +241,8 @@ text-align:center;
 
 .about h2{
 font-size:48px;
-margin-bottom:60px;
 color:#d4af37;
+margin-bottom:60px;
 }
 
 .about-grid{
@@ -186,16 +253,16 @@ gap:35px;
 
 .box{
 background:#181818;
-padding:45px 35px;
+border:1px solid rgba(212,175,55,.25);
 border-radius:20px;
-border:1px solid rgba(212,175,55,.2);
+padding:40px 30px;
 transition:.35s;
 }
 
 .box:hover{
 transform:translateY(-10px);
 border-color:#d4af37;
-box-shadow:0 15px 40px rgba(212,175,55,.2);
+box-shadow:0 15px 35px rgba(212,175,55,.2);
 }
 
 .box h3{
@@ -206,56 +273,89 @@ color:#d4af37;
 
 .box p{
 font-size:18px;
-color:#cfcfcf;
+color:#d0d0d0;
 line-height:1.8;
 }
 
-/* ===== FOOTER ===== */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
 margin-top:120px;
-padding:70px 30px;
 background:#111;
-text-align:center;
 border-top:1px solid rgba(212,175,55,.2);
+padding:70px 20px;
+text-align:center;
 }
 
 footer h2{
 font-size:34px;
 color:#d4af37;
-margin-bottom:20px;
+margin-bottom:15px;
 letter-spacing:3px;
 }
 
 footer p{
-font-size:18px;
 color:#999;
-margin:10px 0;
+font-size:18px;
+margin:8px 0;
 }
 
-/* ===== RESPONSIVE ===== */
+footer a{
+color:#d4af37;
+}
 
-@media(max-width:1000px){
+footer a:hover{
+color:#fff;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.brand-grid div,
+.box{
+opacity:0;
+transform:translateY(60px);
+animation:fadeUp 1s forwards;
+}
+
+.brand-grid div:nth-child(1){animation-delay:.1s;}
+.brand-grid div:nth-child(2){animation-delay:.2s;}
+.brand-grid div:nth-child(3){animation-delay:.3s;}
+.brand-grid div:nth-child(4){animation-delay:.4s;}
+.brand-grid div:nth-child(5){animation-delay:.5s;}
+.brand-grid div:nth-child(6){animation-delay:.6s;}
+.brand-grid div:nth-child(7){animation-delay:.7s;}
+.brand-grid div:nth-child(8){animation-delay:.8s;}
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1200px){
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+font-size:22px;
+}
 
 .brand-grid{
 grid-template-columns:repeat(2,1fr);
 }
 
 .about-grid{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:52px;
-}
-
-.hero p{
-font-size:20px;
+grid-template-columns:repeat(2,1fr);
 }
 
 }
 
-@media(max-width:700px){
+/* ---------- iPad ---------- */
+
+@media(max-width:900px){
 
 header{
 flex-direction:column;
@@ -266,16 +366,64 @@ padding:20px;
 nav{
 flex-wrap:wrap;
 justify-content:center;
-gap:15px;
+gap:20px;
+}
+
+.hero{
+padding-top:120px;
 }
 
 .hero h1{
-font-size:38px;
+font-size:48px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.brand-grid{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+/* ---------- Phone ---------- */
+
+@media(max-width:600px){
+
+.logo{
+font-size:26px;
+letter-spacing:2px;
+}
+
+nav{
+flex-direction:column;
+align-items:center;
+gap:12px;
+}
+
+nav a{
+font-size:17px;
+}
+
+.hero{
+height:auto;
+padding:170px 20px 90px;
+}
+
+.hero h1{
+font-size:36px;
 letter-spacing:2px;
 }
 
 .hero p{
-font-size:17px;
+font-size:18px;
+margin-bottom:30px;
 }
 
 .hero-buttons{
@@ -283,44 +431,80 @@ flex-direction:column;
 align-items:center;
 }
 
-.brand-grid{
-grid-template-columns:1fr;
+.btn,
+.btn2{
+width:100%;
+max-width:300px;
+}
+
+.brands,
+.about{
+margin:70px auto;
+padding:0 20px;
 }
 
 .brands h2,
 .about h2{
-font-size:34px;
+font-size:32px;
+margin-bottom:35px;
 }
 
-.logo{
+.brand-grid{
+grid-template-columns:1fr;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.brand-grid div,
+.box{
+padding:25px;
+}
+
+footer{
+padding:50px 20px;
+}
+
+footer h2{
 font-size:28px;
 }
 
-}
-.show{
-opacity:1!important;
-transform:translateY(0)!important;
+footer p{
+font-size:16px;
 }
 
-.box,
-.brand-grid div,
-.product{
-opacity:0;
-transform:translateY(60px);
-transition:1s;
 }
+
+/* =========================
+   TOP BUTTON
+========================= */
 
 #topBtn{
 
 position:fixed;
 
-bottom:30px;
+right:25px;
 
-right:30px;
+bottom:25px;
 
 width:55px;
 
 height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#d4af37;
+
+color:#000;
+
+font-size:26px;
+
+font-weight:bold;
+
+cursor:pointer;
 
 display:none;
 
@@ -328,19 +512,7 @@ justify-content:center;
 
 align-items:center;
 
-background:#d4af37;
-
-color:#000;
-
-border:none;
-
-border-radius:50%;
-
-font-size:28px;
-
-cursor:pointer;
-
-box-shadow:0 10px 25px rgba(212,175,55,.4);
+box-shadow:0 10px 25px rgba(212,175,55,.35);
 
 transition:.3s;
 
@@ -353,6 +525,10 @@ z-index:9999;
 transform:scale(1.1);
 
 }
+
+/* =========================
+   SCROLLBAR
+========================= */
 
 ::-webkit-scrollbar{
 
@@ -374,8 +550,8 @@ border-radius:20px;
 
 }
 
-html{
+::-webkit-scrollbar-thumb:hover{
 
-scroll-behavior:smooth;
+background:#f0c94d;
 
 }
