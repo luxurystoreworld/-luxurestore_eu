@@ -60,6 +60,7 @@ buy:"Пурсидани нарх"
 },
 
 ru:{
+ru:{
 
 home:"Главная",
 perfumes:"Парфюм",
@@ -117,6 +118,8 @@ p18:"Женский",
 buy:"Узнать цену"
 
 },
+
+en:{
 en:{
 
 home:"Home",
@@ -176,6 +179,7 @@ buy:"Ask Price"
 
 },
 
+de:{
 de:{
 
 home:"Startseite",
