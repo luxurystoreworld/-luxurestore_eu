@@ -28,8 +28,6 @@ topBtn.style.display="none";
 
 }
 
-}
-
 function topFunction(){
 
 window.scrollTo({
@@ -41,3 +39,12 @@ behavior:"smooth"
 });
 
 }
+const menu=document.getElementById("menu-toggle");
+
+const nav=document.getElementById("nav");
+
+menu.addEventListener("click",function(){
+
+nav.classList.toggle("active");
+
+});
